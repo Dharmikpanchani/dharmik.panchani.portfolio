@@ -204,6 +204,16 @@ img {
   transform: translateY(0);
   transition-delay: 0.24s;
 }
+.projects-grid.revealed .project-card:nth-child(4) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.36s;
+}
+.projects-grid.revealed .project-card:nth-child(5) {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.48s;
+}
 
 /* =============================================
    MARQUEE ANIMATION

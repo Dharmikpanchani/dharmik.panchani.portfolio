@@ -124,8 +124,8 @@ function Contact() {
                   },
                   {
                     label: 'Email',
-                    value: 'dharmikpanchani96@email.com',
-                    href: 'dharmikpanchani96@email.com',
+                    value: 'dharmikpanchani96@gmail.com',
+                    href: 'dharmikpanchani96@gmail.com',
                     icon: (
                       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
@@ -145,7 +145,7 @@ function Contact() {
                   },
                   {
                     label: 'Location',
-                    value: 'India, ahmedabad',
+                    value: 'Jaydeep Duplex, Jivanwadi, Nikol, Ahmedabad – 382350',
                     icon: (
                       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />

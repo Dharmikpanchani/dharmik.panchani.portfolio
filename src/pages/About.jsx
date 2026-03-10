@@ -58,6 +58,28 @@ const projects = [
       'Followed best practices for clean, maintainable, and reusable code while working in a team-based development environment.',
     ],
   },
+  {
+    name: 'E-Commerce System',
+    url: null,
+    role: 'Frontend Developer',
+    technologies: ['HTML', 'CSS', 'Bootstrap', 'JavaScript'],
+    points: [
+      'A web application developed to understand and implement Bootstrap and JavaScript functionalities.',
+      'Designed a responsive product layout with user-friendly UI design.',
+      'Built dynamic page components and interactive front-end elements.',
+    ],
+  },
+  {
+    name: 'School Management System',
+    url: null,
+    role: 'Database Designer',
+    technologies: ['Database Design'],
+    points: [
+      'Designed and developed a structured and normalized database system for managing school operations.',
+      'Created well-structured relational database with organized data management system.',
+      'Implemented normalized tables for efficient data storage and retrieval.',
+    ],
+  },
 ]
 
 function About() {
@@ -86,12 +108,12 @@ function About() {
             <div className="hero-text">
               <p className="hero-greeting">Hello, I'm</p>
               <h1 className="hero-name gradient-text">Dharmik Panchani</h1>
-              <p className="hero-title">MERN Stack Developer</p>
+              <p className="hero-title">React.js Developer</p>
               <p className="hero-description">
-                A MERN Stack Developer with 3+ years of experience in building modern, scalable, and high-performance web applications.
+                I am a passionate React.js Developer with over 3+ years of experience building scalable, responsive, and high-performance web applications. I specialize in modern front-end development using React, JavaScript, Redux, and UI frameworks.
               </p>
               <p className="hero-description">
-                I specialize in developing full-stack applications using React.js for the frontend and Node.js, Express.js, and MongoDB for the backend and database, ensuring responsive user interfaces and efficient server-side performance.
+                I focus on creating user-friendly interfaces, clean code architecture, and high-quality digital experiences.
               </p>
               <div className="hero-actions">
                 <a href="/contact" className="btn-primary">
@@ -158,28 +180,30 @@ function About() {
                     <h3 className="project-name">{project.name}</h3>
                     <span className="project-role">{project.role}</span>
                   </div>
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-link-btn"
-                  >
-                    <svg
-                      width="14"
-                      height="14"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
+                  {project.url && (
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link-btn"
                     >
-                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                      <polyline points="15 3 21 3 21 9" />
-                      <line x1="10" y1="14" x2="21" y2="3" />
-                    </svg>
-                    Live
-                  </a>
+                      <svg
+                        width="14"
+                        height="14"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      >
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                      </svg>
+                      Live
+                    </a>
+                  )}
                 </div>
 
                 <ul className="project-points">
@@ -196,17 +220,19 @@ function About() {
                   ))}
                 </div>
 
-                <div className="project-url-row">
-                  <span className="project-url-label">URL</span>
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="project-url-link"
-                  >
-                    {project.url}
-                  </a>
-                </div>
+                {project.url && (
+                  <div className="project-url-row">
+                    <span className="project-url-label">URL</span>
+                    <a
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-url-link"
+                    >
+                      {project.url}
+                    </a>
+                  </div>
+                )}
               </div>
             ))}
           </div>

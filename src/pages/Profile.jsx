@@ -46,7 +46,7 @@ function Profile() {
                 className="profile-avatar-img"
               />
               <h2 className="profile-name gradient-text">Dharmik Panchani</h2>
-              <p className="profile-title">MERN Stack Developer</p>
+              <p className="profile-title">React.js Developer</p>
               <div className="profile-exp-badge">~3+ Years Experience</div>
               <div className="profile-divider" />
               <div className="profile-links">
@@ -88,11 +88,10 @@ function Profile() {
                 Profile Summary
               </h2>
               <p className="summary-text">
-                I am a MERN Stack Developer with around 3+ years of professional experience in building scalable and modern web applications. I specialize in developing responsive and high-performance user interfaces and full-stack applications using modern JavaScript technologies.
-
+                I am a passionate React.js Developer with over 3+ years of experience building scalable, responsive, and high-performance web applications. I specialize in modern front-end development using React, JavaScript, Redux, and UI frameworks.
               </p>
               <p className="summary-text">
-                I have strong experience working with React.js, Node.js, Redux, JavaScript, TypeScript, MongoDB, Material UI, Formik, Vite, and Next.js. I focus on writing clean, maintainable code and delivering optimized and user-friendly web applications.
+                I am a dedicated and results-driven React.js Developer with more than 3+ years of professional experience in front-end development. I specialize in developing modern web applications using JavaScript, React.js, Redux, and advanced UI frameworks including Material UI. I focus on creating user-friendly interfaces, clean code architecture, and high-quality digital experiences.
               </p>
             </div>
 
