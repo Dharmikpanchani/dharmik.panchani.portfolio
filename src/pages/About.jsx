@@ -18,20 +18,6 @@ const techItems = [
 
 const projects = [
   {
-    name: 'Axi Digital',
-    url: 'https://dev.axidigital.xyz',
-    role: 'React Developer',
-    technologies: ['React', 'TypeScript', 'Keycloak Auth', 'Blockchain', 'Java APIs'],
-    points: [
-      'Developed and maintained scalable frontend components using React.js with TypeScript to build modern and responsive user interfaces.',
-      'Implemented secure authentication and authorization using Keycloak to ensure protected user access across the application.',
-      'Built blockchain-related UI modules and integrated them with backend services for seamless data interaction.',
-      'Collaborated closely with backend developers to integrate REST APIs and ensure smooth data flow between frontend and server.',
-      'Developed responsive dashboards and optimized UI performance for better user experience and faster load times.',
-      'Followed best practices for clean, maintainable, and reusable code while working in a team-based development environment.',
-    ],
-  },
-  {
     name: 'News Capital',
     url: 'https://newscapital.com/',
     role: 'MERN Stack Developer',
@@ -45,13 +31,31 @@ const projects = [
     ],
   },
   {
-    name: 'App Work Demo',
+    name: 'Real Estate Platform',
     url: 'https://vh25wmf071132.user.appworkdemo.com/',
     role: 'Frontend Developer',
     technologies: ['React', 'Node.js', 'Vite', 'TypeScript'],
     points: [
       'Developed modular React components and implemented TypeScript-based architecture for improved maintainability.',
       'Worked on building responsive user interfaces, API integrations, and improving overall application performance.',
+      'Collaborated with backend developers to integrate REST APIs and ensure seamless data flow between frontend and server.',
+      'Implemented state management solutions to handle complex application states and improve user experience.',
+      'Optimized UI performance and implemented best practices for clean, maintainable code.',
+      
+    ],
+  },
+  {
+    name: 'Axi Digital',
+    url: 'https://dev.axidigital.xyz',
+    role: 'React Developer',
+    technologies: ['React', 'TypeScript', 'Keycloak Auth', 'Blockchain', 'Java APIs'],
+    points: [
+      'Developed and maintained scalable frontend components using React.js with TypeScript to build modern and responsive user interfaces.',
+      'Implemented secure authentication and authorization using Keycloak to ensure protected user access across the application.',
+      'Built blockchain-related UI modules and integrated them with backend services for seamless data interaction.',
+      'Collaborated closely with backend developers to integrate REST APIs and ensure smooth data flow between frontend and server.',
+      'Developed responsive dashboards and optimized UI performance for better user experience and faster load times.',
+      'Followed best practices for clean, maintainable, and reusable code while working in a team-based development environment.',
     ],
   },
 ]
