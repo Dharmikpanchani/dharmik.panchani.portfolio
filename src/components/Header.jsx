@@ -58,12 +58,13 @@ function Header() {
         </NavLink>
 
         <nav className={`nav ${menuOpen ? 'open' : ''}`}>
-          {navLinks.map(({ path, label }) => (
+          {navLinks.map(({ path, label }, i) => (
             <NavLink
               key={path}
               to={path}
               className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}
               onClick={closeMenu}
+              style={{ '--i': i }}
             >
               {label}
             </NavLink>
@@ -97,7 +98,7 @@ function Header() {
         </div>
       </div>
 
-      {menuOpen && <div className="overlay" onClick={closeMenu} />}
+      <div className={`overlay ${menuOpen ? 'visible' : ''}`} onClick={closeMenu} />
     </header>
   )
 }
