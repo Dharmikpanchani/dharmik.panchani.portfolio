@@ -1,5 +1,6 @@
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import './About.css'
+import myImg from '../assets/images/jpg/dharmik.jpg'
 
 const techItems = [
   { name: 'React', symbol: 'Re', color: '#61DAFB' },
@@ -98,7 +99,7 @@ function About() {
             <div className="hero-image-wrap">
               <div className="hero-image-glow" />
               <img
-                src="src\assets\images\jpg\dharmik.jpg"
+                src={myImg}
                 alt="Dharmik Panchani"
                 className="profile-img"
               />

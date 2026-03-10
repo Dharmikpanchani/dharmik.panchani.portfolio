@@ -1,5 +1,6 @@
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import './Profile.css'
+import myImg from '../assets/images/jpg/dharmik.jpg'
 
 const techStack = [
   { name: 'React.js', symbol: 'Re' },
@@ -41,7 +42,7 @@ function Profile() {
           <div className="profile-left">
             <div className="profile-card card reveal" ref={profileCardRef}>
               <img
-                src="src\assets\images\jpg\dharmik.jpg"
+                src={myImg}
                 alt="Dharmik Panchani"
                 className="profile-avatar-img"
               />
