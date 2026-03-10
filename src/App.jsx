@@ -1,11 +1,11 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
-import Header from './components/Header'
-import Footer from './components/Footer'
-import ScrollToTop from './components/ScrollToTop'
-import About from './pages/About'
-import Resume from './pages/Resume'
-import Profile from './pages/Profile'
-import Contact from './pages/Contact'
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
+import About from "./pages/About";
+import Resume from "./pages/Resume";
+import Profile from "./pages/Profile";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
       </main>
       <Footer />
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
