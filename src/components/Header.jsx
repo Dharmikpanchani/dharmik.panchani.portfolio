@@ -50,7 +50,7 @@ function Header() {
   return (
     <header className={`header ${scrolled ? 'scrolled' : ''}`}>
       <div className="header-inner container">
-        <NavLink to="/about" className="logo" onClick={closeMenu}>
+        <NavLink to="/" className="logo" onClick={closeMenu}>
           <span className="logo-badge">DP</span>
           <span className="logo-text">
             Dharmik<span className="logo-accent"> Panchani</span>

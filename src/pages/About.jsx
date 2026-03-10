@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import './About.css'
 import myImg from '../assets/images/jpg/dharmik.jpg'
@@ -117,12 +118,12 @@ function About() {
                 I focus on creating user-friendly interfaces, clean code architecture, and high-quality digital experiences.
               </p>
               <div className="hero-actions">
-                <a href="/contact" className="btn-primary">
+                <NavLink to="/contact" className="btn-primary">
                   Get In Touch
-                </a>
-                <a href="/resume" className="btn-secondary">
+                </NavLink>
+                <NavLink to="/resume" className="btn-secondary">
                   View Resume
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>
