@@ -4,7 +4,7 @@ import { submitContact, resetContact } from '../store/slices/contactSlice'
 import { useScrollReveal } from '../hooks/useScrollReveal'
 import './Contact.css'
 
-const EMAIL = 'dharmikpanchani96@gmail.com'
+const EMAIL = import.meta.env.VITE_EMAIL
 
 const EMAIL_CLIENTS = [
   {
@@ -12,11 +12,11 @@ const EMAIL_CLIENTS = [
     url: `https://mail.google.com/mail/?view=cm&fs=1&to=${EMAIL}`,
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-        <path d="M2 6.5C2 5.4 2.9 4.5 4 4.5h16c1.1 0 2 .9 2 2v11c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-11z" fill="var(--bg-secondary)" stroke="var(--border-color)" strokeWidth="0.5"/>
-        <path d="M2 6.5l10 7 10-7" stroke="#EA4335" strokeWidth="1.5" fill="none"/>
-        <path d="M2 6.5l10 7" stroke="#34A853" strokeWidth="1.5" fill="none"/>
-        <path d="M12 13.5l10-7" stroke="#FBBC05" strokeWidth="1.5" fill="none"/>
-        <path d="M2 19.5V6.5l10 7 10-7v13" fill="#4285F4" opacity="0.07"/>
+        <path d="M2 6.5C2 5.4 2.9 4.5 4 4.5h16c1.1 0 2 .9 2 2v11c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2v-11z" fill="var(--bg-secondary)" stroke="var(--border-color)" strokeWidth="0.5" />
+        <path d="M2 6.5l10 7 10-7" stroke="#EA4335" strokeWidth="1.5" fill="none" />
+        <path d="M2 6.5l10 7" stroke="#34A853" strokeWidth="1.5" fill="none" />
+        <path d="M12 13.5l10-7" stroke="#FBBC05" strokeWidth="1.5" fill="none" />
+        <path d="M2 19.5V6.5l10 7 10-7v13" fill="#4285F4" opacity="0.07" />
         <text x="50%" y="55%" dominantBaseline="middle" textAnchor="middle" fontSize="9" fontWeight="700" fill="#EA4335" fontFamily="Arial">G</text>
       </svg>
     ),
@@ -28,7 +28,7 @@ const EMAIL_CLIENTS = [
     url: `https://outlook.live.com/mail/0/deeplink/compose?to=${EMAIL}`,
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-        <rect width="24" height="24" rx="4" fill="#0078D4" opacity="0.12"/>
+        <rect width="24" height="24" rx="4" fill="#0078D4" opacity="0.12" />
         <text x="50%" y="56%" dominantBaseline="middle" textAnchor="middle" fontSize="10" fontWeight="700" fill="#0078D4" fontFamily="Arial">O</text>
       </svg>
     ),
@@ -40,7 +40,7 @@ const EMAIL_CLIENTS = [
     url: `https://compose.mail.yahoo.com/?to=${EMAIL}`,
     icon: (
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-        <rect width="24" height="24" rx="4" fill="#6001D2" opacity="0.12"/>
+        <rect width="24" height="24" rx="4" fill="#6001D2" opacity="0.12" />
         <text x="50%" y="56%" dominantBaseline="middle" textAnchor="middle" fontSize="10" fontWeight="700" fill="#6001D2" fontFamily="Arial">Y!</text>
       </svg>
     ),
@@ -81,8 +81,8 @@ function EmailPickerModal({ onClose }) {
           <h3 className="email-picker-title">Open with</h3>
           <button className="email-picker-close" onClick={onClose} aria-label="Close">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-              <line x1="18" y1="6" x2="6" y2="18"/>
-              <line x1="6" y1="6" x2="18" y2="18"/>
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
             </svg>
           </button>
         </div>
@@ -103,7 +103,7 @@ function EmailPickerModal({ onClose }) {
               </span>
               <span className="email-picker-name">{client.name}</span>
               <svg className="email-picker-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="9 18 15 12 9 6"/>
+                <polyline points="9 18 15 12 9 6" />
               </svg>
             </a>
           ))}
@@ -234,8 +234,8 @@ function Contact() {
                   },
                   {
                     label: 'Email',
-                    value: 'dharmikpanchani6@gmail.com',
-                    href: 'dharmikpanchani6@gmail.com',
+                    value: EMAIL,
+                    href: EMAIL,
                     icon: (
                       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
