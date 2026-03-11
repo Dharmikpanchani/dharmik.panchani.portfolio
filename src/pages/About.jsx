@@ -43,7 +43,7 @@ const projects = [
       'Collaborated with backend developers to integrate REST APIs and ensure seamless data flow between frontend and server.',
       'Implemented state management solutions to handle complex application states and improve user experience.',
       'Optimized UI performance and implemented best practices for clean, maintainable code.',
-      
+
     ],
   },
   {
@@ -110,9 +110,9 @@ function About() {
             <div className="hero-text">
               <p className="hero-greeting">Hello, I'm</p>
               <h1 className="hero-name gradient-text">Dharmik Panchani</h1>
-              <p className="hero-title">React.js Developer</p>
+              <p className="hero-title">MERN Stack Developer</p>
               <p className="hero-description">
-                I am a passionate React.js Developer with over 3+ years of experience building scalable, responsive, and high-performance web applications. I specialize in modern front-end development using React, JavaScript, Redux, and UI frameworks.
+                I am a passionate MERN stack Developer with over 3+ years of experience building scalable, responsive, and high-performance web applications. I specialize in modern front-end development using React, JavaScript, Redux, Node, MongoDB and UI frameworks.
               </p>
               <p className="hero-description">
                 I focus on creating user-friendly interfaces, clean code architecture, and high-quality digital experiences.
