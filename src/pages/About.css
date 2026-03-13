@@ -347,6 +347,41 @@
   top: 2px;
 }
 
+.project-features-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-secondary, #a78bfa);
+  margin: 14px 0 6px;
+}
+
+.project-features {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+}
+
+.project-features li {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  line-height: 1.7;
+  padding-left: 16px;
+  position: relative;
+}
+
+.project-features li::before {
+  content: '◆';
+  position: absolute;
+  left: 0;
+  color: var(--accent-secondary, #a78bfa);
+  font-size: 0.5rem;
+  top: 6px;
+}
+
 .project-tech {
   display: flex;
   flex-wrap: wrap;

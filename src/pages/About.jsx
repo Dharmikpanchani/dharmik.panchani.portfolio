@@ -16,6 +16,11 @@ const techItems = [
   { name: 'Next.js', symbol: 'Nx', color: '#94a3b8' },
   { name: 'Vite', symbol: 'Vi', color: '#a78bfa' },
   { name: 'Formik', symbol: 'Fk', color: '#5b8def' },
+  { name: 'Bootstrap', symbol: 'Bs', color: '#563d7c' },
+  { name: 'Firebase', symbol: 'Fb', color: '#FFCA28' },
+  { name: 'Keycloak', symbol: 'Kc', color: '#AA0000' },
+  { name: 'JWT', symbol: 'Jw', color: '#E34F26' },
+  { name: 'Express.js', symbol: 'Ex', color: '#000000' },
 ]
 
 const projects = [
@@ -23,27 +28,40 @@ const projects = [
     name: 'News Capital',
     url: 'https://newscapital.com/',
     role: 'MERN Stack Developer',
-    technologies: ['Next.js', 'Node.js', 'Vite', 'JavaScript'],
+    technologies: ['Next.js', 'Node.js', 'Vite', 'JavaScript', 'MongoDB', 'firebase'],
     points: [
-      'Developed responsive and SEO-friendly web pages using Next.js.',
-      'Built dynamic and reusable UI components to ensure maintainable and scalable frontend architecture.',
-      'Integrated REST APIs to fetch and display real-time content updates across the platform.',
-      'Focused on performance optimization, improving page load speed and overall user experience.',
-      'Followed modern UI/UX design principles to create clean and user-friendly interfaces.',
+      'Developed responsive and SEO-optimized web pages using Next.js to improve search engine visibility and performance.',
+      'Built scalable and reusable UI components to maintain a clean and modular frontend architecture.',
+      'Integrated RESTful APIs to fetch and display real-time news content across the platform.',
+      'Implemented performance optimization techniques to enhance page load speed and overall user experience.',
+      'Collaborated with the backend team to ensure smooth API integration and efficient data flow.',
+    ],
+    features: [
+      'Real-time news updates with dynamic content rendering and fast page loading.',
+      'Secure user authentication with personalized news recommendations based on user interests.',
+      'Admin dashboard for managing news articles, categories, and user engagement.',
+      'Real-time notifications for breaking news and important updates.',
+      'Interactive UI for improved user engagement and seamless reading experience.',
     ],
   },
   {
     name: 'Real Estate Platform',
     url: 'https://vh25wmf071132.user.appworkdemo.com/',
     role: 'Frontend Developer',
-    technologies: ['React', 'Node.js', 'Vite', 'TypeScript'],
+    technologies: ['React', 'Node.js', 'Vite', 'TypeScript', 'MongoDB'],
     points: [
-      'Developed modular React components and implemented TypeScript-based architecture for improved maintainability.',
-      'Worked on building responsive user interfaces, API integrations, and improving overall application performance.',
-      'Collaborated with backend developers to integrate REST APIs and ensure seamless data flow between frontend and server.',
-      'Implemented state management solutions to handle complex application states and improve user experience.',
-      'Optimized UI performance and implemented best practices for clean, maintainable code.',
-
+      'Developed modular and reusable React components using TypeScript for a scalable frontend architecture.',
+      'Built responsive user interfaces for property listings, search, and filtering features.',
+      'Integrated REST APIs to enable real-time property data retrieval and seamless user interactions.',
+      'Collaborated with backend developers to ensure efficient data flow between frontend and server.',
+      'Improved application performance and code maintainability by following modern frontend best practices.',
+    ],
+    features: [
+      'AI-powered property search and advanced filtering for better property discovery.',
+      'Secure user authentication and authorization using JSON Web Tokens (JWT) with rate limiting for enhanced security.',
+      'Interactive map-based property search using Google Maps API for location visualization.',
+      'Responsive and user-friendly UI for browsing property listings and detailed property information.',
+      'Admin dashboard to manage property listings, user activities, and platform content.',
     ],
   },
   {
@@ -52,12 +70,20 @@ const projects = [
     role: 'React Developer',
     technologies: ['React', 'TypeScript', 'Keycloak Auth', 'Blockchain', 'Java APIs'],
     points: [
-      'Developed and maintained scalable frontend components using React.js with TypeScript to build modern and responsive user interfaces.',
-      'Implemented secure authentication and authorization using Keycloak to ensure protected user access across the application.',
-      'Built blockchain-related UI modules and integrated them with backend services for seamless data interaction.',
-      'Collaborated closely with backend developers to integrate REST APIs and ensure smooth data flow between frontend and server.',
-      'Developed responsive dashboards and optimized UI performance for better user experience and faster load times.',
-      'Followed best practices for clean, maintainable, and reusable code while working in a team-based development environment.',
+      'Developed scalable and reusable frontend components using React.js and TypeScript to build modern web interfaces.',
+      'Implemented secure authentication and authorization using Keycloak for role-based user access control.',
+      'Built blockchain-related dashboards and UI modules integrated with backend APIs.',
+      'Integrated REST APIs and external services to display real-time blockchain data on the platform.',
+      'Optimized UI performance and improved application responsiveness for better user experience.',
+      'Collaborated with cross-functional teams while following best practices for clean and maintainable code.',
+    ],
+    features: [
+      'Secure user authentication and role-based access control using Keycloak.',
+      'Real-time blockchain data visualization using advanced trading and charting libraries.',
+      'Interactive dashboard for monitoring blockchain activities and analytics.',
+      'Admin panel for managing users, roles, and system permissions.',
+      'Integration with external APIs for blockchain data retrieval and system functionality.',
+      'Polling mechanism to continuously fetch and update blockchain data in real-time.',
     ],
   },
   {
@@ -112,10 +138,12 @@ function About() {
               <h1 className="hero-name gradient-text">Dharmik Panchani</h1>
               <p className="hero-title">MERN Stack Developer</p>
               <p className="hero-description">
-                I'm a passionate MERN stack Developer with over 3+ years of experience building scalable, responsive, and high-performance web applications. I specialize in modern front-end development using React, JavaScript, Redux, Node, MongoDB and UI frameworks.
+                MERN Stack Developer
+
+                I am a passionate MERN Stack Developer with 3+ years of experience building scalable, responsive, and high-performance web applications. I specialize in modern frontend development using React.js, JavaScript, and Redux, along with backend technologies like Node.js and MongoDB.
               </p>
               <p className="hero-description">
-                I focus on creating user-friendly interfaces, clean code architecture, and high-quality digital experiences.
+                I enjoy creating intuitive user interfaces, writing clean and maintainable code, and delivering high-quality digital products that provide excellent user experiences.
               </p>
               <div className="hero-actions">
                 <NavLink to="/contact" className="btn-primary">
@@ -213,6 +241,17 @@ function About() {
                     <li key={i}>{point}</li>
                   ))}
                 </ul>
+
+                {project.features && (
+                  <>
+                    <p className="project-features-label">Features</p>
+                    <ul className="project-features">
+                      {project.features.map((feature, i) => (
+                        <li key={i}>{feature}</li>
+                      ))}
+                    </ul>
+                  </>
+                )}
 
                 <div className="project-tech">
                   {project.technologies.map((tech) => (
