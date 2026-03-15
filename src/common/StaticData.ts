@@ -18,7 +18,7 @@ export const techItems = [
         symbol: "JS",
         color: "#F7DF1E",
         logo: "https://cdn.simpleicons.org/javascript/F7DF1E",
-        doc: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+        doc: "https://javascript.info/"
     },
     {
         name: "TypeScript",
